@@ -3,6 +3,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
       System.out.println("Im on replit!!");
+      System.out.println("now im on intelij");
 
         JFrame frame = new JFrame();
         frame.setSize(500,500);
