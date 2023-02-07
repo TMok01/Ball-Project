@@ -5,6 +5,8 @@ public class Ball {
     private int x, y, size, xSpeed, ySpeed;
     private Color color;
 
+
+
     // Constructor
 
     public Ball(int x, int y, int size, int xSpeed, int ySpeed) {
@@ -27,7 +29,6 @@ public class Ball {
     }
     public void moveUp() {
         y -= 10;
-
     }
     public void moveDown() {
         y +=10;
@@ -36,10 +37,15 @@ public class Ball {
     public void moveBall() {
         x += xSpeed;
         y += ySpeed;
+        //if(x >= panel.getWidth() - 20 || x <=0) {
+           // xSpeed *= -1;
+       // }
+        //else if(y >= panel.getHeight() - 20 || y <= 0) {
+           // ySpeed *= -1;
+        }
     }
 
 
 
 
 
-}

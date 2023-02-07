@@ -11,7 +11,6 @@ public class Main {
 
         DrawPanel panel = new DrawPanel();
         BallPanel panel2 = new BallPanel();
-        //frame.add(panel);
         frame.add(panel2);
 
 

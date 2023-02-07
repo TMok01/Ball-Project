@@ -9,10 +9,14 @@ public class BallPanel extends JPanel {
     int y = 50;
     int ySpeed = 3;
 
-    int height = getHeight();
-    int width = getWidth();
+    int height;
+    int width;
 
-    Ball stuff = new Ball(50,50,100,3,3);
+
+
+
+
+
     Ball balls = new Ball(50,50,100,3,3);
 
     Ball bill;
@@ -25,6 +29,7 @@ public class BallPanel extends JPanel {
             public void keyTyped(KeyEvent e) {
 
             }
+
 
             @Override
             public void keyPressed(KeyEvent e) {
@@ -61,20 +66,27 @@ public class BallPanel extends JPanel {
 
     // Methods
 
-
+    public int getHeight() {
+        height = y;
+        return height;
+    }
+    public int getWidth() {
+        width = x;
+        return width;
+    }
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         balls.drawBall(g);
 
 
-//        if(x >= width - 20 || x <= 0) {
-//            xSpeed *= -1;
-//        }
-//
-//        if(y >= height - 20 || y <= 0) {
-//            ySpeed *= -1;
-//        }
+       // if(x >= width - 20 || x <= 0) {
+       //     xSpeed *= -1;
+      //  }
+
+      //  else if(y >= height - 20 || y <= 0) {
+       //     ySpeed *= -1;
+       // }
 
 
         try
@@ -88,8 +100,7 @@ public class BallPanel extends JPanel {
 
 
 
-            bill.drawBall(g);
-            bill.moveBall();
+
 
 repaint();
     }
